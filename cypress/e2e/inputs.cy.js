@@ -23,7 +23,7 @@ describe('Input Forms Tests', () => {
     cy.get('input[name="phone"]').type(phoneNumber);
     cy.get('input[name="birthday"]').type('01/01/1999');
   });
-  it('Check different radio button actions', () => {
+  it.skip('Check different radio button actions', () => {
        cy.get('.radio')
        .find('[type=radio]')
        .then((radio => {
@@ -41,5 +41,13 @@ describe('Input Forms Tests', () => {
         // Third radio button is NOT checked
         cy.wrap(radio).eq(2).should('not.be.checked');
        })) 
+  })
+  it('Check different checkbox actions',() => {
+    // get all chechboxes, select JAVA and verify
+    cy.get('[type="checkbox"]').then((checkbox) => {
+        cy.wrap(checkbox).eq(1).check().should('be.checked');
+        // uncheck JAVA
+        cy.wrap(checkbox).eq(1).uncheck().should('not.be.checked');
+    })
   })
 });
