@@ -14,7 +14,7 @@ describe('Context: My First Tests', () => {
   afterEach(() => {
     // similar to afterMethod in TestNG
   });
-  it.skip('Opening a web application', () => {
+  it('Opening a web application', () => {
     cy.visit('/registration_form');
   });
   it('Test 2', () => {
