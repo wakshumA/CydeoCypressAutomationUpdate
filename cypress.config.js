@@ -6,7 +6,8 @@ module.exports = defineConfig({
     env: {
       login:"/login",
       apiUrl:"https://demoqa.com",
-      apiBooks:"/BookStore/v1/Books"
+      apiBooks:"/BookStore/v1/Books",
+      generateUser:"/Account/v1/User",
     },
     video: false,
     retries: 1,
