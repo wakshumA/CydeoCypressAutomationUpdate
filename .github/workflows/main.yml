@@ -26,5 +26,5 @@ jobs:
                 # since we have installed dependencies we set it false and run
                 install: false
                 browser: chrome
-                spec: cypress/e2e/**/*
+                spec: cypress/apiTests/**/*
     
