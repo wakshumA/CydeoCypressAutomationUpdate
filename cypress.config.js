@@ -8,7 +8,8 @@ module.exports = defineConfig({
       apiUrl:"https://demoqa.com",
       apiBooks:"/BookStore/v1/Books",
       generateUser:"/Account/v1/User",
-      generateToken:"/Account/v1/GenerateToken"
+      generateToken:"/Account/v1/GenerateToken",
+      loginAPI:"/Account/v1/Login"
     },
     video: false,
     retries: 1,
