@@ -23,7 +23,7 @@ jobs:
             - name: Cypress Run
               uses: cypress-io/github-action@v4
               with:
-                # since we have installed dependencies we set it false
+                # since we have installed dependencies we set it false and run
                 install: false
                 browser: chrome
                 spec: cypress/e2e/**/*
